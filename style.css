@@ -3,18 +3,31 @@ body{
 }
 table{
     text-decoration-color: khaki;
-    border: 12px solid rgb(37, 37, 37);
+    border: 20px inset rgb(203 182 182);
     border-collapse: collapse;
+    width: 27%;
+    background: #d3cbc6a1;
+    table-layout:auto;
 }
 table tr td{
-    background-color:rgb(223, 222, 191);
+    background-color: #d3cea3;
     text-indent: right;
     text-align: center;
     transition:.5s linear, border-radius 2s  ease-in 1s;
 }
 td{
-    border: 5px solid rgb(141, 141, 141); 
+    border: 5px rgb(141, 141, 141); 
+    border-style:inset;
 }
 td:hover{
-    background-color: rgb(109, 97, 97);
+    background-color: #977f69;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 15px 15px;
+}
+.block{
+    display:block;
+    width:100px;
+    height:50px
 }
