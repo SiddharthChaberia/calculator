@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Sidd
+    </title>
+    <link rel="stylesheet" href="style.css"
+    
+</head>
+<body>
+    <script>
+        function disp(n)
+        {
+            document.getElementById("result").value+=n;
+        }
+        function solve()
+        {
+            let x = document.getElementById("result").value;
+            let y = eval(x);
+            document.getElementById("result").value = y;
+        }      
+        function clr()
+        {
+            document.getElementById("result").value = "";
+        }
+        function back()
+        {
+            document.getElementById("result").value=document.getElementById("result").value.slice(0,-1)
+        }
+    </script>
+    <table>
+        <tr>
+            <td colspan="2"><input type="text" id="result"></td>
+            <td><input type="button" value="   Back     " accesskey="Backspace" onclick="back()"></td>
+            <td><input type="button" value="   Clear    " accesskey="Delete" onclick="clr()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" accesskey="7" onclick="disp('7')"></td>
+            <td><input type="button" value="8" accesskey="8" onclick="disp('8')"></td>
+            <td><input type="button" value="9" accesskey="9" onclick="disp('9')"></td>
+            <td><input type="button" value="/" accesskey="/" onclick="disp('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" accesskey="4" onclick="disp('4')"></td>
+            <td><input type="button" value="5" accesskey="5" onclick="disp('5')"></td>
+            <td><input type="button" value="6" accesskey="6" onclick="disp('6')"></td>
+            <td><input type="button" value="*" accesskey="*" onclick="disp('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" accesskey="1" onclick="disp('1')"></td>
+            <td><input type="button" value="2" accesskey="2" onclick="disp('2')"></td>
+            <td><input type="button" value="3" accesskey="3" onclick="disp('3')"></td>
+            <td><input type="button" value="-" accesskey="-" onclick="disp('-')"></td>
+        </tr>
+        <tr>
+            <td align="center"><input type="button" value="0" accesskey="0" onclick="disp('0')"></td>
+            <td align="center"><input type="button" value="." accesskey="." onclick="disp('.')"></td>
+            <td align="center"><input type="button" value="=" accesskey="Enter" onclick="solve()"></td>
+            <td align="center"><input type="button" value="+" accesskey="+" onclick="disp('+')"></td>
+        </tr>
+    </table>
+</body>
+</html>
