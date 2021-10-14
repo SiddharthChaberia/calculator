@@ -16,18 +16,28 @@ table tr td{
     transition:.5s linear, border-radius 2s  ease-in 1s;
 }
 td{
-    border: 5px rgb(141, 141, 141); 
+    border: 5px rgb(182, 177, 177); 
     border-style:inset;
 }
 td:hover{
-    background-color: #977f69;
+    background-color: #000000;
 }
 table{
     border-collapse: separate;
     border-spacing: 15px 15px;
 }
 .block{
-    display:block;
     width:100px;
-    height:50px
+    height:50px;
+    font-size: 40px;
+}
+.block2{
+    width:100px;
+    height:50px;
+    font-size: 35px;
+}
+.block3{
+    width:220px;
+    height: 45px;
+    font-size:35px; 
 }
