@@ -1,23 +1,24 @@
+
 body{
     background-color: rgb(255, 255, 255);
 }
 table{
     text-decoration-color: khaki;
-    border: 20px inset rgb(203 182 182);
+    border: 20px outset rgb(168, 159, 159);
     border-collapse: collapse;
     width: 27%;
     background: #d3cbc6a1;
     table-layout:auto;
 }
 table tr td{
-    background-color: #d3cea3;
+    background-color: #afad9c;
     text-indent: right;
     text-align: center;
     transition:.5s linear, border-radius 2s  ease-in 1s;
 }
 td{
-    border: 5px rgb(182, 177, 177); 
-    border-style:inset;
+    border: 5px rgb(201, 193, 193); 
+    border-style:outset;
 }
 td:hover{
     background-color: #000000;
